@@ -38,5 +38,11 @@ public class DragonMain {
         dragon2.changeDirection(1);
         dragon2.move(3);
         dragon2.printStatus();
+
+        // jika method move() dipanggil persis setelah objek diinstansiasi
+        System.out.println("\n========== Dragon 3 =========="); 
+        Dragon dragon3 = new Dragon(0, 0, 0);
+        dragon3.move(2);
+        dragon3.printStatus();
     }
 }

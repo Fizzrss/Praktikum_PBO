@@ -6,7 +6,11 @@ public class Dragon {
     Dragon(int awalX, int awalY, int awalDirection){
         x = awalX;
         y = awalY;
-        direction = awalDirection;
+        if (awalDirection >= 1 && awalDirection <= 4) {
+            direction = awalDirection;
+        } else {
+            direction = 1;
+        }
     }
 
     void changeDirection(int newDirection){
