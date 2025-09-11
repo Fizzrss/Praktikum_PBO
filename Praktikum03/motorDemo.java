@@ -22,6 +22,13 @@ public class motorDemo {
         motor4.setStatusMesin(true);
         motor4.setKecepatan(200);  
         motor4.displayInfo();
+
+        // kecepatan diisi negatf
+        Motor motor5 = new Motor();
+        motor5.setPlatNomor("AG 6754 AY");
+        motor5.setStatusMesin(true);
+        motor5.setKecepatan(-30);  
+        motor5.displayInfo();
     }
 }
 
