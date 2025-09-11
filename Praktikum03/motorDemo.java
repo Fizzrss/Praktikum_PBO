@@ -10,11 +10,18 @@ public class motorDemo {
         motor2.setStatusMesin(true);
         motor2.setKecepatan(40);  
         motor2.displayInfo();
-
+        
         Motor motor3 = new Motor();
         motor3.setPlatNomor("D 8343 CV");
         motor3.setKecepatan(60);
         motor3.displayInfo();
+
+        // kecepatan lebih dari 100
+        Motor motor4 = new Motor();
+        motor4.setPlatNomor("S 9187 AD");
+        motor4.setStatusMesin(true);
+        motor4.setKecepatan(200);  
+        motor4.displayInfo();
     }
 }
 
