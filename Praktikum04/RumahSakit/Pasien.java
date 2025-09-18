@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.time.LocalDate;
 
 public class Pasien {
     private String noRekamMedis;
@@ -25,6 +26,14 @@ public class Pasien {
         this.noRekamMedis = noRekamMedis;
         this.nama = nama;
         this.riwayatKonsultasi = new ArrayList<Konsultasi>();
+    }
+
+    public void tambahKonsultasi(LocalDate tanggal, Pegawai dokter, Pegawai perawat){
+        Konsultasi konsultasi= new Konsultasi();
+        konsultasi.setTanggal(tanggal);
+        konsultasi.setDokter(dokter);
+        konsultasi.setPerawat(perawat);
+        riwayatKonsultasi.add(konsultasi);
     }
 
     public String getInfo(){
