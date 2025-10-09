@@ -7,7 +7,7 @@ public class Pegawai {
         System.out.println("Objek dari class Pegawai dibuat");
     }
 
-    public final String getInfo(){
+    public String getInfo(){
         String info = "";
         info += "NIP       : " + nip + "\n";
         info += "Nama      : " + nama + "\n";
