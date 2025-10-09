@@ -3,6 +3,7 @@ public class Dosen extends Pegawai {
 
     public Dosen() {
         System.out.println("Objek dari class Dosen dibuat");
+        super(nip, nama, gaji);
     }
 
     public Dosen(String nip, String nama, double gaji, String nidn) {
