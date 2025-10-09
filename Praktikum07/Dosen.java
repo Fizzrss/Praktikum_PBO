@@ -6,7 +6,10 @@ public class Dosen extends Pegawai {
     }
 
     public Dosen(String nip, String nama, double gaji, String nidn) {
-        System.out.println("Objek dari class Dosen dibuat dengan construktor berparameter");
+        this.nip = nip;
+        this.nama = nama;
+        this.gaji = gaji;
+        this.nidn = nidn;
     }   
 
     public String getInfo(){
