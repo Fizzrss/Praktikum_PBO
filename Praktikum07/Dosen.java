@@ -1,5 +1,3 @@
-import testpackage.Pegawai;
-
 public class Dosen extends Pegawai {
     public String nidn;
 
